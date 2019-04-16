@@ -3,13 +3,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00ffcc"
+    android:background="#F8F8F8"
     tools:context=".main_activity_fragments.HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Home Fragement" />
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <TableRow>
+            <Button
+                android:id="@+id/addStudentBtn"
+                android:text="Add Student"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:backgroundTint="#03A9F4"/>
+            <Button
+                android:text="Add Teacher"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:backgroundTint="#03A9F4"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="Add Student"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:backgroundTint="#03A9F4"/>
+            <Button
+                android:text="Add Teacher"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:backgroundTint="#03A9F4"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:text="Add Student"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:backgroundTint="#03A9F4"/>
+            <Button
+                android:text="Add Teacher"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:backgroundTint="#03A9F4"/>
+        </TableRow>
+    </TableLayout>
 
 </FrameLayout>

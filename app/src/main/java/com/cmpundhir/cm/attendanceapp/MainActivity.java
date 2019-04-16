@@ -21,11 +21,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.cmpundhir.cm.attendanceapp.init.SplashActivity;
 import com.cmpundhir.cm.attendanceapp.main_activity_fragments.DashboardFragment;
 import com.cmpundhir.cm.attendanceapp.main_activity_fragments.HomeFragment;
 import com.cmpundhir.cm.attendanceapp.main_activity_fragments.NotificationFragment;
 import com.cmpundhir.cm.attendanceapp.main_activity_fragments.OnFragmentInteractionListener;
 import com.cmpundhir.cm.attendanceapp.message.MessageActivity;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener , OnFragmentInteractionListener {
@@ -112,6 +114,8 @@ public class MainActivity extends AppCompatActivity
             case R.id.action_settings:
                 Toast.makeText(this, "Settings", Toast.LENGTH_SHORT).show();break;
             case R.id.action_logout:
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(MainActivity.this, SplashActivity.class));
                 finish();break;
         }
 
